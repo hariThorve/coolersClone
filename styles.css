@@ -1,0 +1,486 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo img {
+  height: 24px;
+}
+
+.promo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+.skillshare-logo {
+  height: 20px;
+}
+
+.learn-more {
+  color: #0066ff;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tools-btn {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.go-pro {
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  color: #ff0099;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.profile-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ff0099;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 24px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.content-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 22px;
+    color: #4D4D4D;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    max-width: 500px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    justify-self: center;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.primary-btn {
+    background: #0066FF;
+    color: white;
+    border: none;
+    padding: 18px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.2s;
+}
+
+.primary-btn:hover {
+    background: #0052cc;
+}
+
+.secondary-btn {
+    background: white;
+    color: #333;
+    border: 1px solid #E5E5E5;
+    padding: 18px 32px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.secondary-btn:hover {
+    background: #f5f5f5;
+    border-color: #D5D5D5;
+}
+
+.product-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    border: 1px rgb(255, 24, 24) solid;
+    
+    border-radius: 12px;
+    background: #FFF5F5;
+    width: fit-content;
+    justify-self: center;
+}
+
+.trophy-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.badge-label {
+    color: #FF4646;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.badge-title {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding: 20px;
+    text-align: center;
+}
+
+.card-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__initial-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+    margin-top: 8px;
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color:rgb(180, 66, 206);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+}
+
+.card__cta {
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+}
+
+/* Remove the old SVG styles */
+.card svg {
+    width: 36px;
+    height: 36px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Add new image styles */
+.card-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Update hover state for images instead of SVGs */
+.card:hover .card-icon {
+    scale: 0;
+}
+
+/* Remove the custom icon colors since we're using PNGs */
+.apple-icon,
+.android-icon,
+.figma-icon,
+.chrome-icon,
+.adobe-icon {
+    display: none;
+}
+
+/* NEW badge */
+.card.new::after {
+    content: 'NEW';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #FF0099;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.companies-section {
+    padding: 80px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.companies-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 48px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.company-logo {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.company-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%) brightness(0);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+/* Hover Animation */
+.company-logo:hover {
+    transform: translateY(-8px);
+}
+
+.company-logo:hover img {
+    filter: none;
+    opacity: 1;
+}
+
+/* Add smooth transition for neighboring logos */
+.company-logo:hover + .company-logo {
+    transform: translateY(-4px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .company-logos {
+        gap: 24px;
+    }
+
+    .company-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.footer {
+    background: #f8f8f8;
+    padding: 80px 24px;
+}
+
+.footer-columns {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-column h3 {
+    color: #333;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #666;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+}
+
+.footer-column ul li a:hover {
+    color: #0066FF;
+}
+
+.new-badge {
+    background: #FF0099;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+/* Additional spacing for sections with multiple headings */
+.footer-column h3:not(:first-child) {
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.demo-video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-left,
+    .content-right {
+        width: 100%;
+    }
+
+    .demo-video {
+        margin-top: 40px;
+    }
+} 
